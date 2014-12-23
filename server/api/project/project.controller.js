@@ -7,3 +7,8 @@ var projectData = require('./modules.json');
 exports.index = function(req, res) {
   res.json([projectData]);
 };
+
+exports.make = function(req, res) {
+  console.log(req.body);
+  res.json({ok:1});
+};
