@@ -1,0 +1,818 @@
+{
+  "content_access": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "content_access",
+    "humanName": "Content Access"
+  },
+  "admin": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "admin",
+    "humanName": "Admin"
+  },
+  "admin_menu": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "admin_menu",
+    "humanName": "Administration menu"
+  },
+  "module_filter": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "module_filter",
+    "humanName": "Module Filter"
+  },
+  "contemplate": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "contemplate",
+    "humanName": "Content Templates (Contemplate)"
+  },
+  "ctools": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "ctools",
+    "humanName": "Chaos tool suite"
+  },
+  "context": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "context",
+    "humanName": "Context"
+  },
+  "calendar": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "calendar",
+    "humanName": "Calendar"
+  },
+  "date": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "date",
+    "humanName": "Date"
+  },
+  "devel": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "devel",
+    "humanName": "Devel"
+  },
+  "features": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "features",
+    "humanName": "Features"
+  },
+  "content_taxonomy": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "content_taxonomy",
+    "humanName": "Content Taxonomy"
+  },
+  "email": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "email",
+    "humanName": "Email Field"
+  },
+  "filefield_paths": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "filefield_paths",
+    "humanName": "FileField Paths"
+  },
+  "link": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "link",
+    "humanName": "Link"
+  },
+  "flag": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "flag",
+    "humanName": "Flag"
+  },
+  "invite": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "invite",
+    "humanName": "Invite"
+  },
+  "mimemail": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "mimemail",
+    "humanName": "Mime Mail"
+  },
+  "privatemsg": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "privatemsg",
+    "humanName": "Privatemsg"
+  },
+  "simplenews": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "simplenews",
+    "humanName": "Simplenews"
+  },
+  "imce": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "imce",
+    "humanName": "IMCE"
+  },
+  "i18n": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "i18n",
+    "humanName": "Internationalization"
+  },
+  "og": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "og",
+    "humanName": "Organic groups"
+  },
+  "acl": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "acl",
+    "humanName": "ACL"
+  },
+  "acquia_marina": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "acquia_marina",
+    "humanName": "Acquia Marina"
+  },
+  "adaptivetheme": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "adaptivetheme",
+    "humanName": "AdaptiveTheme"
+  },
+  "addtoany": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "addtoany",
+    "humanName": "AddToAny Share/Bookmark Button"
+  },
+  "advanced_forum": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "advanced_forum",
+    "humanName": "Advanced Forum"
+  },
+  "advanced_help": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "advanced_help",
+    "humanName": "Advanced help"
+  },
+  "analytic": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "analytic",
+    "humanName": "Analytic"
+  },
+  "author_pane": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "author_pane",
+    "humanName": "Author Pane"
+  },
+  "auto_nodetitle": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "auto_nodetitle",
+    "humanName": "Automatic Nodetitles"
+  },
+  "backup_migrate": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "backup_migrate",
+    "humanName": "Backup and Migrate"
+  },
+  "basic": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "basic",
+    "humanName": "Basic"
+  },
+  "better_formats": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "better_formats",
+    "humanName": "Better Formats"
+  },
+  "blueprint": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "blueprint",
+    "humanName": "Blueprint"
+  },
+  "boxes": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "boxes",
+    "humanName": "Boxes"
+  },
+  "captcha": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "captcha",
+    "humanName": "CAPTCHA"
+  },
+  "cck": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "cck",
+    "humanName": "Content Construction Kit (CCK)"
+  },
+  "comment_notify": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "comment_notify",
+    "humanName": "Comment Notify"
+  },
+  "computed_field": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "computed_field",
+    "humanName": "Computed Field"
+  },
+  "context_admin": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "context_admin",
+    "humanName": "Contextual Administration"
+  },
+  "custom_breadcrumbs": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "custom_breadcrumbs",
+    "humanName": "Custom Breadcrumbs"
+  },
+  "dhtml_menu": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "dhtml_menu",
+    "humanName": "DHTML Menu"
+  },
+  "diff": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "diff",
+    "humanName": "Diff"
+  },
+  "ds": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "ds",
+    "humanName": "Display Suite"
+  },
+  "elements": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "elements",
+    "humanName": "Elements"
+  },
+  "entity": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "entity",
+    "humanName": "Entity API"
+  },
+  "entityreference": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "entityreference",
+    "humanName": "Entity reference"
+  },
+  "faq": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "faq",
+    "humanName": "Frequently Asked Questions"
+  },
+  "feeds": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "feeds",
+    "humanName": "Feeds"
+  },
+  "field_group": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "field_group",
+    "humanName": "Field group"
+  },
+  "framework": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "framework",
+    "humanName": "Framework"
+  },
+  "front": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "front",
+    "humanName": "Front Page"
+  },
+  "fusion": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "fusion",
+    "humanName": "Fusion"
+  },
+  "genesis": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "genesis",
+    "humanName": "Genesis"
+  },
+  "getid3": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "getid3",
+    "humanName": "getID3()"
+  },
+  "globalredirect": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "globalredirect",
+    "humanName": "Global Redirect"
+  },
+  "gmap": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "gmap",
+    "humanName": "GMap Module"
+  },
+  "google_analytics": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "google_analytics",
+    "humanName": "Google Analytics"
+  },
+  "html5_base": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "html5_base",
+    "humanName": "HTML5 Base"
+  },
+  "html5_tools": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "html5_tools",
+    "humanName": "HTML5 Tools"
+  },
+  "image": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "image",
+    "humanName": "Image"
+  },
+  "imageapi": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "imageapi",
+    "humanName": "ImageAPI"
+  },
+  "imagecache_actions": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "imagecache_actions",
+    "humanName": "ImageCache Actions"
+  },
+  "imagecache_profiles": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "imagecache_profiles",
+    "humanName": "ImageCache Profiles"
+  },
+  "insert": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "insert",
+    "humanName": "Insert"
+  },
+  "jquery_ui": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "jquery_ui",
+    "humanName": "jQuery UI"
+  },
+  "libraries": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "libraries",
+    "humanName": "Libraries API"
+  },
+  "location": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "location",
+    "humanName": "Location"
+  },
+  "logintoboggan": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "logintoboggan",
+    "humanName": "LoginToboggan"
+  },
+  "login_destination": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "login_destination",
+    "humanName": "Login Destination"
+  },
+  "marinelli": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "marinelli",
+    "humanName": "Marinelli"
+  },
+  "menu_block": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "menu_block",
+    "humanName": "Menu block"
+  },
+  "menu_breadcrumb": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "menu_breadcrumb",
+    "humanName": "Menu Breadcrumb"
+  },
+  "menu_minipanels": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "menu_minipanels",
+    "humanName": "Menu minipanels"
+  },
+  "messaging": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "messaging",
+    "humanName": "Messaging"
+  },
+  "mix_and_match": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "mix_and_match",
+    "humanName": "Mix and Match"
+  },
+  "modernizr": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "modernizr",
+    "humanName": "Modernizr"
+  },
+  "module_builder": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "module_builder",
+    "humanName": "Module Builder"
+  },
+  "mollom": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "mollom",
+    "humanName": "Mollom"
+  },
+  "newswire": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "newswire",
+    "humanName": "Newswire"
+  },
+  "nice_menus": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "nice_menus",
+    "humanName": "Nice Menus"
+  },
+  "ninesixty": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "ninesixty",
+    "humanName": "NineSixty (960 Grid System)"
+  },
+  "nitobe": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "nitobe",
+    "humanName": "Nitobe"
+  },
+  "nodequeue": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "nodequeue",
+    "humanName": "Nodequeue"
+  },
+  "nodereference_url": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "nodereference_url",
+    "humanName": "Node Reference URL Widget"
+  },
+  "node_clone": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "node_clone",
+    "humanName": "Node clone"
+  },
+  "notifications": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "notifications",
+    "humanName": "Notifications"
+  },
+  "omega": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "omega",
+    "humanName": "Omega"
+  },
+  "panelizer": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "panelizer",
+    "humanName": "Panelizer"
+  },
+  "pathauto": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "pathauto",
+    "humanName": "Pathauto"
+  },
+  "path_redirect": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "path_redirect",
+    "humanName": "Path redirect"
+  },
+  "poormanscron": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "poormanscron",
+    "humanName": "Poormanscron"
+  },
+  "quicktabs": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "quicktabs",
+    "humanName": "Quick Tabs"
+  },
+  "references": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "references",
+    "humanName": "References"
+  },
+  "relation": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "relation",
+    "humanName": "Relation"
+  },
+  "responder": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "responder",
+    "humanName": "Responder"
+  },
+  "responsive_images": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "responsive_images",
+    "humanName": "Responsive Images"
+  },
+  "rootcandy": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "rootcandy",
+    "humanName": "RootCandy"
+  },
+  "rubik": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "rubik",
+    "humanName": "Rubik"
+  },
+  "scheduler": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "scheduler",
+    "humanName": "Scheduler"
+  },
+  "search404": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "search404",
+    "humanName": "Search 404"
+  },
+  "securepages": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "securepages",
+    "humanName": "Secure Pages"
+  },
+  "service_links": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "service_links",
+    "humanName": "Service links"
+  },
+  "site_map": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "site_map",
+    "humanName": "Site map"
+  },
+  "site_verify": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "site_verify",
+    "humanName": "Site verification"
+  },
+  "sky": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "sky",
+    "humanName": "Sky"
+  },
+  "smtp": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "smtp",
+    "humanName": "SMTP Authentication Support"
+  },
+  "stringoverrides": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "stringoverrides",
+    "humanName": "String Overrides"
+  },
+  "strongarm": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "strongarm",
+    "humanName": "Strongarm"
+  },
+  "tao": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "tao",
+    "humanName": "Tao"
+  },
+  "token": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "token",
+    "humanName": "Token"
+  },
+  "transliteration": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "transliteration",
+    "humanName": "Transliteration"
+  },
+  "ubercart": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "ubercart",
+    "humanName": "Ubercart"
+  },
+  "panels": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "panels",
+    "humanName": "Panels"
+  },
+  "print": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "print",
+    "humanName": "Printer, e-mail and PDF versions"
+  },
+  "rules": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "rules",
+    "humanName": "Rules"
+  },
+  "page_title": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "page_title",
+    "humanName": "Page Title"
+  },
+  "skinr": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "skinr",
+    "humanName": "Skinr"
+  },
+  "recaptcha": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "recaptcha",
+    "humanName": "reCAPTCHA"
+  },
+  "taxonomy_manager": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "taxonomy_manager",
+    "humanName": "Taxonomy Manager"
+  },
+  "taxonomy_menu": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "taxonomy_menu",
+    "humanName": "Taxonomy Menu"
+  },
+  "ckeditor": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "ckeditor",
+    "humanName": "CKEditor - WYSIWYG HTML editor"
+  },
+  "extlink": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "extlink",
+    "humanName": "External Links"
+  },
+  "imce_wysiwyg": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "imce_wysiwyg",
+    "humanName": "IMCE Wysiwyg bridge"
+  },
+  "jquery_plugin": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "jquery_plugin",
+    "humanName": "jQuery plugins"
+  },
+  "jquery_update": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "jquery_update",
+    "humanName": "jQuery Update"
+  },
+  "wysiwyg": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "wysiwyg",
+    "humanName": "Wysiwyg"
+  },
+  "views": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "views",
+    "humanName": "Views"
+  },
+  "views_bulk_operations": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "views_bulk_operations",
+    "humanName": "Views Bulk Operations (VBO)"
+  },
+  "views_slideshow": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "views_slideshow",
+    "humanName": "Views Slideshow"
+  },
+  "fivestar": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "fivestar",
+    "humanName": "Fivestar"
+  },
+  "votingapi": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "votingapi",
+    "humanName": "Voting API"
+  },
+  "webform": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "webform",
+    "humanName": "Webform"
+  },
+  "xmlsitemap": {
+    "projectType": "module",
+    "type": "drupal",
+    "machineName": "xmlsitemap",
+    "humanName": "XML sitemap"
+  }
+}
