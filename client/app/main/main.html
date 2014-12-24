@@ -1,8 +1,9 @@
 <!-- <div ng-include="'components/navbar/navbar.html'"></div> -->
-<!--
-<pre>
-  {{projects | json}}
-</pre> -->
+   <!--
+      -<pre>
+      -  {{dashboard.projects | json}}
+      -</pre>
+      -->
 <div class="controls">
   <button class="send" data-ng-click="dashboard.sendData()">Send</button>
   <label for="search">Search</label>
@@ -10,19 +11,43 @@
 </div>
 
 <div class="project-list">
-  <ul>
-    <li class="project" data-ng-repeat="project in dashboard.projects| filter:searchText">
-      <input type="checkbox" ng-model="project.selected">
-      <span class="human-name">{{project.humanName}}</span>
-    </li>
-  </ul>
+  <section class="module-list">
+    <h3 class="module-list-header">Modules</h3>
+    <ul>
+        <li class="project" data-ng-repeat="project in dashboard.projects| filter:searchText | filter: {projectType: 'module'}">
+            <input type="checkbox" ng-model="project.selected" data-ng-change="dashboard.populateVersions(project)">
+            <span class="human-name">{{project.humanName}}</span>
+            <select data-ng-if="project.selected" data-ng-options="version.id for version in project.versions" data-ng-model="project.version"></select>
+        </li>
+    </ul>
+    <input type="text" data-ng-model="dashboard.newModule">
+    <button class="add-module" data-ng-click="dashboard.addProject('module')">Add Another</button>
+  </section>
+  <section class="theme-list">
+    <h3 class="theme-list-header">Themes</h3>
+    <ul>
+        <li class="project" data-ng-repeat="project in dashboard.projects| filter:searchText | filter: {projectType: 'theme'}">
+            <input type="checkbox" ng-model="project.selected" data-ng-change="dashboard.populateVersions(project)">
+            <span class="human-name">{{project.humanName}}</span>
+            <select data-ng-if="project.selected && project.type === 'drupal'" data-ng-options="version.id for version in project.versions" data-ng-model="project.version"></select>
+        </li>
+    </ul>
+    <select class="type" data-ng-model="dashboard.newThemeType">
+      <option value="drupal">drupal.org/project/</option>
+      <option value="www">www</option>
+      <option value="git">git</option>
+    </select>
+    <input type="text" data-ng-model="dashboard.newTheme" placeholder="theme">
+    <input type="text" data-ng-model="dashboard.newThemeUrl" data-ng-if="dashboard.newThemeType !== 'drupal'" placeholder="url">
+    <button class="add-module" data-ng-click="dashboard.addProject('theme')">Add Another</button>
+  </section>
 </div>
 
 <div class="selected-projects">
   <h1>Selected</h1>
   <ul>
-    <li data-ng-repeat="project in dashboard.projects | filter:{selected: true}">
-      {{project.humanName}} {{project.selected}}
+    <li data-ng-repeat="project in dashboard.projects | filter:{selected: true, version: '!'}">
+      {{project.humanName}}
     </li>
   </ul>
 </div>
