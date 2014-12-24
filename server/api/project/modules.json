@@ -143,18 +143,6 @@
     "machineName": "acl",
     "humanName": "ACL"
   },
-  "acquia_marina": {
-    "projectType": "module",
-    "type": "drupal",
-    "machineName": "acquia_marina",
-    "humanName": "Acquia Marina"
-  },
-  "adaptivetheme": {
-    "projectType": "module",
-    "type": "drupal",
-    "machineName": "adaptivetheme",
-    "humanName": "AdaptiveTheme"
-  },
   "addtoany": {
     "projectType": "module",
     "type": "drupal",
@@ -208,12 +196,6 @@
     "type": "drupal",
     "machineName": "better_formats",
     "humanName": "Better Formats"
-  },
-  "blueprint": {
-    "projectType": "module",
-    "type": "drupal",
-    "machineName": "blueprint",
-    "humanName": "Blueprint"
   },
   "boxes": {
     "projectType": "module",
@@ -323,18 +305,6 @@
     "machineName": "front",
     "humanName": "Front Page"
   },
-  "fusion": {
-    "projectType": "module",
-    "type": "drupal",
-    "machineName": "fusion",
-    "humanName": "Fusion"
-  },
-  "genesis": {
-    "projectType": "module",
-    "type": "drupal",
-    "machineName": "genesis",
-    "humanName": "Genesis"
-  },
   "getid3": {
     "projectType": "module",
     "type": "drupal",
@@ -431,12 +401,6 @@
     "machineName": "login_destination",
     "humanName": "Login Destination"
   },
-  "marinelli": {
-    "projectType": "module",
-    "type": "drupal",
-    "machineName": "marinelli",
-    "humanName": "Marinelli"
-  },
   "menu_block": {
     "projectType": "module",
     "type": "drupal",
@@ -485,29 +449,11 @@
     "machineName": "mollom",
     "humanName": "Mollom"
   },
-  "newswire": {
-    "projectType": "module",
-    "type": "drupal",
-    "machineName": "newswire",
-    "humanName": "Newswire"
-  },
   "nice_menus": {
     "projectType": "module",
     "type": "drupal",
     "machineName": "nice_menus",
     "humanName": "Nice Menus"
-  },
-  "ninesixty": {
-    "projectType": "module",
-    "type": "drupal",
-    "machineName": "ninesixty",
-    "humanName": "NineSixty (960 Grid System)"
-  },
-  "nitobe": {
-    "projectType": "module",
-    "type": "drupal",
-    "machineName": "nitobe",
-    "humanName": "Nitobe"
   },
   "nodequeue": {
     "projectType": "module",
@@ -532,12 +478,6 @@
     "type": "drupal",
     "machineName": "notifications",
     "humanName": "Notifications"
-  },
-  "omega": {
-    "projectType": "module",
-    "type": "drupal",
-    "machineName": "omega",
-    "humanName": "Omega"
   },
   "panelizer": {
     "projectType": "module",
@@ -593,18 +533,6 @@
     "machineName": "responsive_images",
     "humanName": "Responsive Images"
   },
-  "rootcandy": {
-    "projectType": "module",
-    "type": "drupal",
-    "machineName": "rootcandy",
-    "humanName": "RootCandy"
-  },
-  "rubik": {
-    "projectType": "module",
-    "type": "drupal",
-    "machineName": "rubik",
-    "humanName": "Rubik"
-  },
   "scheduler": {
     "projectType": "module",
     "type": "drupal",
@@ -641,12 +569,6 @@
     "machineName": "site_verify",
     "humanName": "Site verification"
   },
-  "sky": {
-    "projectType": "module",
-    "type": "drupal",
-    "machineName": "sky",
-    "humanName": "Sky"
-  },
   "smtp": {
     "projectType": "module",
     "type": "drupal",
@@ -665,12 +587,6 @@
     "machineName": "strongarm",
     "humanName": "Strongarm"
   },
-  "tao": {
-    "projectType": "module",
-    "type": "drupal",
-    "machineName": "tao",
-    "humanName": "Tao"
-  },
   "token": {
     "projectType": "module",
     "type": "drupal",
@@ -682,12 +598,6 @@
     "type": "drupal",
     "machineName": "transliteration",
     "humanName": "Transliteration"
-  },
-  "ubercart": {
-    "projectType": "module",
-    "type": "drupal",
-    "machineName": "ubercart",
-    "humanName": "Ubercart"
   },
   "panels": {
     "projectType": "module",
