@@ -2,10 +2,16 @@
 
 angular.module('drushmakeNodeApp')
   .controller('NavbarCtrl', function ($scope, $location) {
-    $scope.menu = [{
+    $scope.menu = [
+    {
       'title': 'Home',
       'link': '/'
-    }];
+    },
+    {
+      'title': 'About',
+      'link': '/about'
+    },
+    ];
 
     $scope.isCollapsed = true;
 
