@@ -1,5 +1,4 @@
 .project-list {
-  width: 50%;
   display: block;
   ul {
     list-style: none;
@@ -9,13 +8,16 @@
   overflow: auto;
   min-width: 260px;
   float: left;
-  clear: both;
+  clear: left;
+  width: 50%;
 }
 
 .selected-projects {
   width: 40%;
-  display: inline-block;
+  display: block;
   vertical-align: top;
+  float: left;
+  clear: right;
 }
 
 .send, .reset {
