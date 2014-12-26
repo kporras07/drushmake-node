@@ -1,12 +1,15 @@
 .project-list {
   width: 50%;
-  display: inline-block;
+  display: block;
   ul {
     list-style: none;
 
   }
   height: 400px;
   overflow: auto;
+  min-width: 260px;
+  float: left;
+  clear: both;
 }
 
 .selected-projects {
@@ -15,8 +18,49 @@
   vertical-align: top;
 }
 
-.send {
-  font-size: 2rem;
+.send, .reset {
+  font-size: 1.5rem;
   padding: 0 2rem;
   color: #5e5e5e;
+}
+
+.navbar-default {
+  display: block;
+  width: 100%;
+  ul.nav {
+    list-style: none;
+    li {
+      float: left;
+      margin: 1rem;
+    }
+  }
+}
+
+.search-controls {
+  display: block;
+  clear: both;
+}
+
+.general-info {
+  margin-top: 1.2rem;
+  clear: both;
+}
+
+.general-options {
+  width: 48%;
+  padding-bottom: .6rem;
+}
+
+.search-controls, .project-list, .controls, .general-options, .general-info {
+  padding-left: .6rem;
+}
+
+.controls {
+  display: block;
+  float: left;
+}
+
+.reset {
+  background-color: red;
+  color: #FFF;
 }

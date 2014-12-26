@@ -1,12 +1,19 @@
-<div ng-include="'components/navbar/navbar.html'"></div>
-<div class="controls">
-  <button class="send" data-ng-click="dashboard.sendData()">Send</button>
-  <button class="reset" data-ng-click="dashboard.resetAll()">Reset</button>
+<div data-ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="general-info" id="info">
+  <h3>What's a makefile?</h3>
+  <p>A makefile is a macro for installing Drupal. It contains a list of files that can be fetched using the power of drush, the command line tool for administering Drupal.</p>
+  <p>Using this generator you can specify the projects (modules or themes) and libraries with that you want to start your new awesome site. Besides of that; you also can select the Drupal core version.</p>
+  <p><a href="#generate">Let's do it</a></p>
+</div>
+
+<div class="search-controls">
   <label for="search">Search</label>
   <input name="search" type="text" data-ng-model="dashboard.searchText">
 </div>
 
-<div class="general-options">
+<div class="general-options" id="generate">
+  <h3>General Options</h3>
   <label for="drupal-version">Drupal Version:</label>
   <select data-ng-model="dashboard.drupalVersion" name="drupal-version" data-ng-change="dashboard.resetAll()">
     <option value="6">Drupal 6</option>
@@ -18,12 +25,18 @@
   <input data-ng-model="dashboard.contribSubdir" name="contrib-subdir" type="text">
 </div>
 
+<div class="controls">
+  <button class="send" data-ng-click="dashboard.sendData()">Send</button>
+  <button class="reset" data-ng-click="dashboard.resetAll()">Reset</button>
+</div>
+
 <div class="project-list">
+  <h2>Projects List</h2>
   <section class="module-list">
     <h3 class="module-list-header">Modules</h3>
     <ul>
         <li class="project" data-ng-repeat="project in dashboard.projects| filter:searchText | filter: {projectType: 'module'}">
-            <input type="checkbox" ng-model="project.selected" data-ng-change="dashboard.populateVersions(project)">
+            <input type="checkbox" data-ng-model="project.selected" data-ng-change="dashboard.populateVersions(project)">
             <span class="human-name">{{project.humanName}}</span>
             <select data-ng-if="project.selected" data-ng-options="version.id for version in project.versions" data-ng-model="project.version"></select>
         </li>
@@ -35,7 +48,7 @@
     <h3 class="theme-list-header">Themes</h3>
     <ul>
         <li class="project" data-ng-repeat="project in dashboard.projects| filter:searchText | filter: {projectType: 'theme'}">
-            <input type="checkbox" ng-model="project.selected" data-ng-change="dashboard.populateVersions(project)">
+            <input type="checkbox" data-ng-model="project.selected" data-ng-change="dashboard.populateVersions(project)">
             <span class="human-name">{{project.humanName}}</span>
             <select data-ng-if="project.selected && project.type === 'drupal'" data-ng-options="version.id for version in project.versions" data-ng-model="project.version"></select>
         </li>
@@ -68,7 +81,7 @@
 </div>
 
 <div class="selected-projects">
-  <h1>Selected</h1>
+  <h2>Selected Projects</h2>
   <ul data-ng-repeat="projectType in dashboard.projectTypes">
       <span class="project-type-name">{{projectType.projectTypeName}}</span>
     <li data-ng-repeat="project in dashboard.projects | filter:{projectType: projectType.projectType, selected: true, version: '!'}">
