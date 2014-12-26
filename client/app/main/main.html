@@ -41,6 +41,22 @@
     <input type="text" data-ng-model="dashboard.newThemeUrl" data-ng-if="dashboard.newThemeType !== 'drupal'" placeholder="url">
     <button class="add-module" data-ng-click="dashboard.addProject('theme')">Add Another</button>
   </section>
+  <section class="library-list">
+    <h3 class="library-list-header">Libraries</h3>
+    <ul>
+        <li class="project" data-ng-repeat="project in dashboard.projects| filter:searchText | filter: {projectType: 'library'}">
+            <input type="checkbox" ng-model="project.selected" data-ng-change="dashboard.populateVersions(project)">
+            <span class="human-name">{{project.humanName}}</span>
+        </li>
+    </ul>
+    <select class="type" data-ng-model="dashboard.newLibraryType">
+      <option value="www">www</option>
+      <option value="git">git</option>
+    </select>
+    <input type="text" data-ng-model="dashboard.newLibrary" placeholder="library">
+    <input type="text" data-ng-model="dashboard.newLibraryUrl" placeholder="url">
+    <button class="add-module" data-ng-click="dashboard.addProject('library')">Add Another</button>
+  </section>
 </div>
 
 <div class="selected-projects">

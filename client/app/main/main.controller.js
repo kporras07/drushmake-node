@@ -158,6 +158,30 @@ angular.module('drushmakeNodeApp')
           }
           break;
         case 'library':
+          var projectName = dashboard.newLibrary;
+          var type = dashboard.newLibraryType;
+          var exists = false;
+          angular.forEach(dashboard.projects, function(data) {
+            if (!exists) {
+              if (data.machineName === projectName) {
+                exists = true;
+                data.selected = true;
+              }
+            }
+          });
+          if (!exists) {
+            dashboard.projects.push({
+              projectType: 'library',
+              type: type,
+              machineName: projectName,
+              humanName: projectName,
+              selected: true,
+              url: dashboard.newLibraryUrl,
+              version: {id: 'na'}
+            });
+            dashboard.newLibrary = '';
+            dashboard.newLibraryUrl = '';
+          }
           break;
       }
     };

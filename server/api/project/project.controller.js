@@ -123,6 +123,14 @@ exports.make = function(req, res) {
 
 
   // Libraries stuff here
+  makeFile += "; Libraries\n\n";
+
+  libraries.forEach(function(value) {
+    makeFile += "; " + value.machineName + "\n";
+    makeFile += "projects[" + value.machineName + "][type] = \"" + value.projectType + "\"\n";
+    makeFile += "projects[" + value.machineName + "][download][type] = \"" + value.type + "\"\n";
+    makeFile += "projects[" + value.machineName + "][download][url] = \"" + value.url + "\"\n\n";
+  });
 
 
   res.send(makeFile);
