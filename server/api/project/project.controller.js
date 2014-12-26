@@ -52,7 +52,6 @@ exports.versions = function(req, res) {
     refs  = stdout
     .split('\n')
     .filter(function(n){ return n != undefined });
-    console.log(refs, 'refs');
     refs.pop();
     _.each(refs, function (tag) {
       tag = tag.split('\t')[1].split('tags/')[1];
