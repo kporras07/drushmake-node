@@ -3,6 +3,10 @@
 angular.module('drushmakeNodeApp')
   .controller('MainCtrl', function ($http) {
     var dashboard = this;
+    var exists = false;
+    var type;
+    if (type) {
+    }
 
     dashboard.projects = [];
     dashboard.projectTypes = [
@@ -82,18 +86,18 @@ angular.module('drushmakeNodeApp')
 
     dashboard.getTextToCopy = function() {
       return dashboard.makeResult;
-    }
+    };
 
     dashboard.addProject = function(type) {
       switch (type) {
         case 'module':
-          var projectName = dashboard.newModule;
-          $http.get('api/projects/name/' + projectName).success(function(data) {
+          var moduleName = dashboard.newModule;
+          $http.get('api/projects/name/' + moduleName).success(function(data) {
             if (data) {
-              var exists = false;
+              exists = false;
               angular.forEach(dashboard.projects, function(data) {
                 if (!exists) {
-                  if (data.machineName === projectName) {
+                  if (data.machineName === moduleName) {
                     exists = true;
                     data.selected = true;
                   }
@@ -101,13 +105,13 @@ angular.module('drushmakeNodeApp')
               });
               if (!exists) {
 
-                var url = 'api/projects/versions/' + dashboard.drupalVersion + '/' + projectName;
+                var url = 'api/projects/versions/' + dashboard.drupalVersion + '/' + moduleName;
                 $http.get(url).success(function(versions) {
                   if (versions) {
                     dashboard.projects.push({
                       projectType: 'module',
                       type: 'drupal',
-                      machineName: projectName,
+                      machineName: moduleName,
                       humanName: data,
                       selected: true,
                       versions: versions,
@@ -116,7 +120,7 @@ angular.module('drushmakeNodeApp')
                     dashboard.newModule = '';
                   }
                   else {
-                    console.log("Couldn't find versions for this project.");
+                    console.log('Couldnt find versions for this project.');
                   }
                 }).error(function(err) {
                   console.log(err, 'Error');
@@ -124,22 +128,22 @@ angular.module('drushmakeNodeApp')
               }
           }
           else {
-            console.log("Module doesn't exist.");
+            console.log('Module doesnt exist.');
           }
       }).error(function(err) {
         console.log(err, 'Error');
       });
           break;
         case 'theme':
-          var projectName = dashboard.newTheme;
-          var type = dashboard.newThemeType;
+          var themeName = dashboard.newTheme;
+          type = dashboard.newThemeType;
           if (type === 'drupal') {
-            $http.get('api/projects/name/' + projectName).success(function(data) {
+            $http.get('api/projects/name/' + themeName).success(function(data) {
               if (data) {
-                var exists = false;
+                exists = false;
                 angular.forEach(dashboard.projects, function(data) {
                   if (!exists) {
-                    if (data.machineName === projectName) {
+                    if (data.machineName === themeName) {
                       exists = true;
                       data.selected = true;
                     }
@@ -147,13 +151,13 @@ angular.module('drushmakeNodeApp')
                 });
                 if (!exists) {
 
-                  var url = 'api/projects/versions/' + dashboard.drupalVersion + '/' + projectName;
+                  var url = 'api/projects/versions/' + dashboard.drupalVersion + '/' + themeName;
                   $http.get(url).success(function(versions) {
                     if (versions) {
                       dashboard.projects.push({
                         projectType: 'theme',
                         type: type,
-                        machineName: projectName,
+                        machineName: themeName,
                         humanName: data,
                         selected: true,
                         versions: versions,
@@ -162,7 +166,7 @@ angular.module('drushmakeNodeApp')
                       dashboard.newTheme = '';
                     }
                     else {
-                      console.log("Couldn't find versions for this project.");
+                      console.log('Couldnt find versions for this project.');
                     }
                   }).error(function(err) {
                     console.log(err, 'Error');
@@ -170,7 +174,7 @@ angular.module('drushmakeNodeApp')
                 }
               }
               else {
-                console.log("Theme doesn't exist.");
+                console.log('Theme doesnt exist.');
               }
             }).error(function(err) {
               console.log(err, 'Error');
@@ -178,10 +182,10 @@ angular.module('drushmakeNodeApp')
           }
           else {
             // Type not Drupal.
-            var exists = false;
+            exists = false;
             angular.forEach(dashboard.projects, function(data) {
               if (!exists) {
-                if (data.machineName === projectName) {
+                if (data.machineName === themeName) {
                   exists = true;
                   data.selected = true;
                 }
@@ -191,8 +195,8 @@ angular.module('drushmakeNodeApp')
               dashboard.projects.push({
                 projectType: 'theme',
                 type: type,
-                machineName: projectName,
-                humanName: projectName,
+                machineName: themeName,
+                humanName: themeName,
                 selected: true,
                 url: dashboard.newThemeUrl,
                 version: {id: 'na'}
@@ -204,8 +208,8 @@ angular.module('drushmakeNodeApp')
           break;
         case 'library':
           var projectName = dashboard.newLibrary;
-          var type = dashboard.newLibraryType;
-          var exists = false;
+          type = dashboard.newLibraryType;
+          exists = false;
           angular.forEach(dashboard.projects, function(data) {
             if (!exists) {
               if (data.machineName === projectName) {
@@ -240,7 +244,7 @@ angular.module('drushmakeNodeApp')
             project.version = data[0];
           }
           else {
-            console.log("Couldn't find versions for this project.");
+            console.log('Couldnt find versions for this project.');
           }
         }).error(function(err) {
           console.log(err, 'Error');
