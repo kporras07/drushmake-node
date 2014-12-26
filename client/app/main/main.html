@@ -1,11 +1,7 @@
 <!-- <div ng-include="'components/navbar/navbar.html'"></div> -->
-   <!--
-      -<pre>
-      -  {{dashboard.projects | json}}
-      -</pre>
-      -->
 <div class="controls">
   <button class="send" data-ng-click="dashboard.sendData()">Send</button>
+  <button class="reset" data-ng-click="dashboard.resetAll()">Reset</button>
   <label for="search">Search</label>
   <input name="search" type="text" data-ng-model="dashboard.searchText">
 </div>
@@ -57,7 +53,7 @@
     <h3 class="library-list-header">Libraries</h3>
     <ul>
         <li class="project" data-ng-repeat="project in dashboard.projects| filter:searchText | filter: {projectType: 'library'}">
-            <input type="checkbox" ng-model="project.selected" data-ng-change="dashboard.populateVersions(project)">
+            <input type="checkbox" data-ng-model="project.selected" data-ng-change="dashboard.populateVersions(project)">
             <span class="human-name">{{project.humanName}}</span>
         </li>
     </ul>
@@ -79,4 +75,10 @@
       {{project.humanName}}
     </li>
   </ul>
+</div>
+
+<div class="makefile-result" data-ng-if="dashboard.makeResult">
+  <pre>
+    {{dashboard.makeResult}}
+  </pre>
 </div>

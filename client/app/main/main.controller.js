@@ -21,6 +21,7 @@ angular.module('drushmakeNodeApp')
     ];
 
     dashboard.searchText = '';
+    dashboard.makeResult = '';
     dashboard.drupalVersion = 7;
     dashboard.contribSubdir = '';
 
@@ -67,8 +68,7 @@ angular.module('drushmakeNodeApp')
           options: options
         };
         $http.post('/api/projects', postData).success(function (data) {
-          //foreach para quitar todos los selecteds
-          console.log('Exito!! ', data);
+          dashboard.makeResult = data;
         }).error(function(err) {
           console.log('Error',err);
         });
