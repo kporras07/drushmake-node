@@ -52,6 +52,7 @@ exports.versions = function(req, res) {
     refs  = stdout
     .split('\n')
     .filter(function(n){ return n != undefined });
+    console.log(refs, 'refs');
     refs.pop();
     _.each(refs, function (tag) {
       tag = tag.split('\t')[1].split('tags/')[1];
@@ -75,7 +76,7 @@ exports.make = function(req, res) {
       themes = [],
       libraries = [];
 
-  req.body.forEach(function(value) {
+  req.body.projects.forEach(function(value) {
     switch (value.projectType) {
       case 'module':
         modules.push(value);
@@ -90,7 +91,8 @@ exports.make = function(req, res) {
   });
 
   // Replace this with option in form.
-  var contribSubdir = '';
+  var contribSubdir = req.body.options.contribSubdir;
+  var drupalVersion = req.body.options.drupalVersion;
 
   var makeFile = "";
   // Core stuff here

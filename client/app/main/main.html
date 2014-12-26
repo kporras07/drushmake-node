@@ -10,6 +10,18 @@
   <input name="search" type="text" data-ng-model="dashboard.searchText">
 </div>
 
+<div class="general-options">
+  <label for="drupal-version">Drupal Version:</label>
+  <select data-ng-model="dashboard.drupalVersion" name="drupal-version" data-ng-change="dashboard.resetAll()">
+    <option value="6">Drupal 6</option>
+    <option value="7">Drupal 7</option>
+  </select>
+  <p class="warning">If you change the Drupal Version; all the selected stuff will be erased.</p>
+
+  <label for="contrib-subdir">Contrib Subdir:</label>
+  <input data-ng-model="dashboard.contribSubdir" name="contrib-subdir" type="text">
+</div>
+
 <div class="project-list">
   <section class="module-list">
     <h3 class="module-list-header">Modules</h3>

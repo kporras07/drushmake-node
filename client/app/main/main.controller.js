@@ -18,6 +18,18 @@ angular.module('drushmakeNodeApp')
       });
     });
 
+    dashboard.resetAll = function() {
+      dashboard.projects = [];
+      $http.get('/api/projects').success(function(projects) {
+        angular.forEach(projects[0], function(data) {
+          data.selected = false;
+          data.version = '';
+          data.versions = [];
+          dashboard.projects.push(data);
+        });
+      });
+    };
+
     dashboard.isSelected = function(item) {
       return item.selected;
     };
@@ -29,8 +41,17 @@ angular.module('drushmakeNodeApp')
           results.push(data);
         }
       });
+      var options = {
+        drupalVersion: dashboard.drupalVersion,
+        contribSubdir: dashboard.contribSubdir
+      };
+
       if (results.length > 0) {
-        $http.post('/api/projects', results).success(function (data) {
+        var postData = {
+          projects: results,
+          options: options
+        };
+        $http.post('/api/projects', postData).success(function (data) {
           //foreach para quitar todos los selecteds
           console.log('Exito!! ', data);
         }).error(function(err) {
