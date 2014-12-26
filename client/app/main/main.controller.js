@@ -22,6 +22,8 @@ angular.module('drushmakeNodeApp')
 
     dashboard.searchText = '';
     dashboard.makeResult = '';
+    dashboard.newThemeType = 'drupal';
+    dashboard.newLibraryType = 'www';
     dashboard.drupalVersion = 7;
     dashboard.contribSubdir = '';
 
@@ -36,6 +38,9 @@ angular.module('drushmakeNodeApp')
 
     dashboard.resetAll = function() {
       dashboard.projects = [];
+      dashboard.makeResult = '';
+      dashboard.newThemeType = 'drupal';
+      dashboard.newLibraryType = 'www';
       $http.get('/api/projects').success(function(projects) {
         angular.forEach(projects[0], function(data) {
           data.selected = false;
@@ -74,6 +79,10 @@ angular.module('drushmakeNodeApp')
         });
       }
     };
+
+    dashboard.getTextToCopy = function() {
+      return dashboard.makeResult;
+    }
 
     dashboard.addProject = function(type) {
       switch (type) {

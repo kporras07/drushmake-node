@@ -21,7 +21,7 @@ exports.getName = function(req, res) {
   };
   var str = '';
   var request = https.request(options, function(result) {
-    if (result.statusCode == 200) {
+    if (result.statusCode === 200) {
       result.on('data', function(chunk) {
         str += chunk;
       });
@@ -51,11 +51,11 @@ exports.versions = function(req, res) {
     tags = [];
     refs  = stdout
     .split('\n')
-    .filter(function(n){ return n != undefined });
+    .filter(function(n){ return n !== undefined });
     refs.pop();
     _.each(refs, function (tag) {
       tag = tag.split('\t')[1].split('tags/')[1];
-      if (tag != undefined) {
+      if (tag !== undefined) {
         if (!drupalVersion || tag.lastIndexOf(drupalVersion, 0) === 0) {
           tags.push(tag.split('^{}')[0]);
         }
