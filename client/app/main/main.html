@@ -35,7 +35,7 @@
   <section class="module-list">
     <h3 class="module-list-header">Modules</h3>
     <ul>
-        <li class="project" data-ng-repeat="project in dashboard.projects| filter:searchText | filter: {projectType: 'module'}">
+        <li class="project" data-ng-repeat="project in dashboard.projects| filter:dashboard.searchText | filter: {projectType: 'module'}">
             <input type="checkbox" data-ng-model="project.selected" data-ng-change="dashboard.populateVersions(project)">
             <span class="human-name">{{project.humanName}}</span>
             <select data-ng-if="project.selected" data-ng-options="version.id for version in project.versions" data-ng-model="project.version"></select>
