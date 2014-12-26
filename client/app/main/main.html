@@ -73,8 +73,9 @@
 
 <div class="selected-projects">
   <h1>Selected</h1>
-  <ul>
-    <li data-ng-repeat="project in dashboard.projects | filter:{selected: true, version: '!'}">
+  <ul data-ng-repeat="projectType in dashboard.projectTypes">
+      <span class="project-type-name">{{projectType.projectTypeName}}</span>
+    <li data-ng-repeat="project in dashboard.projects | filter:{projectType: projectType.projectType, selected: true, version: '!'}">
       {{project.humanName}}
     </li>
   </ul>

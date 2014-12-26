@@ -5,6 +5,21 @@ angular.module('drushmakeNodeApp')
     var dashboard = this;
 
     dashboard.projects = [];
+    dashboard.projectTypes = [
+      {
+        projectType: 'module',
+        projectTypeName: 'Modules'
+      },
+      {
+        projectType: 'theme',
+        projectTypeName: 'Themes'
+      },
+      {
+        projectType: 'library',
+        projectTypeName: 'Libraries'
+      }
+    ];
+
     dashboard.searchText = '';
     dashboard.drupalVersion = 7;
     dashboard.contribSubdir = '';
