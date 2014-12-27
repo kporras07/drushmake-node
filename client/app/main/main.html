@@ -7,11 +7,6 @@
   <p><a href="#generate">Let's do it</a></p>
 </div>
 
-<div class="search-controls">
-  <label for="search">Search</label>
-  <input name="search" type="text" data-ng-model="dashboard.searchText">
-</div>
-
 <div class="general-options" id="generate">
   <h3>General Options</h3>
   <label for="drupal-version">Drupal Version:</label>
@@ -34,6 +29,11 @@
   <h2>Projects List</h2>
   <section class="module-list">
     <h3 class="module-list-header">Modules</h3>
+    <div class="search-controls">
+        <label for="search">Search</label>
+        <input name="search" type="text" data-ng-model="dashboard.searchText">
+    </div>
+
     <ul>
         <li class="project" data-ng-repeat="project in dashboard.projects| filter:dashboard.searchText | filter: {projectType: 'module'}">
             <input type="checkbox" data-ng-model="project.selected" data-ng-change="dashboard.populateVersions(project)">
